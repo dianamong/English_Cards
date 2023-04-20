@@ -1,0 +1,37 @@
+@import "../../assets/styles/style.module.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dddcdc;
+  border-radius: 10px;
+  max-width: 20%;
+  background-color: #f3f3f3;
+  padding: 2rem 1rem 1rem;
+  font-size: $fontSize;
+}
+
+.card__english {
+  padding-top: 2rem;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.card__transcription {
+  padding-bottom: 2rem;
+  color: #a8a8a8;
+}
+
+.card__russian {
+  color: $fontColor;
+}
+
+.card__button {
+  background-color: #72d8e6;
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  font-size: $fontSize;
+  color: #383838;
+}
