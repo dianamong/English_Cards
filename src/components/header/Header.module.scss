@@ -1,0 +1,37 @@
+@import '../../assets/styles/style.module.scss';
+
+.header {
+  background-color: #c1f6fa;
+  color: $fontColor;
+  font-size: $fontSize;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2rem;
+}
+
+.header__logo {
+  &:hover {
+    color: hotpink;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+li {
+  margin-right: 15px;
+}
+
+.menu__item {
+  text-decoration: none;
+  color: $fontColor;
+
+  &:hover {
+    color: hotpink;
+  }
+}
+

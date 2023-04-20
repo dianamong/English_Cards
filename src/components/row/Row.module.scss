@@ -1,0 +1,38 @@
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #e6e7e7;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+.row__input {
+  height: 20px;
+  width: 18vw;
+  justify-self: center;
+  border-radius: 10px;
+  border-color: #e6e7e7;
+  
+}
+
+.btn {
+  height: 40px;
+  width: 40px;
+  border: none;
+  // background-color: rgb(72, 145, 72);
+  &:hover {
+    cursor: pointer;
+    background-color: #cecece;
+  }
+}
+
+.icon {
+  // height: 20px;
+  width: 25px;
+}
+
+.row__buttons {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
