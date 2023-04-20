@@ -1,17 +1,15 @@
 import "./App.css";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import Card from "./components/Card";
-import cards from "./assets/scripts/cards";
-import Row from "./components/row/Row";
-import words from "./utils/words.js";
 import Table from "./components/table/Table";
+import CardMap from "./components/cards/CardMap";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Table />
+      <CardMap />
       <Footer />
     </div>
   );
