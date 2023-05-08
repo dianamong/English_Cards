@@ -5,14 +5,15 @@
   flex-direction: column;
   border: 1px solid #dddcdc;
   border-radius: 10px;
-  max-width: 20%;
+  width: 20%;
+  height: 200px;
   background-color: #f3f3f3;
-  padding: 2rem 1rem 1rem;
+  padding: 4.5rem 2.5rem 5rem;
   font-size: $fontSize;
 }
 
 .card__english {
-  padding-top: 2rem;
+  padding-top: 2.5rem;
   font-weight: 700;
   font-size: 35px;
 }
@@ -27,11 +28,22 @@
 }
 
 .card__button {
-  background-color: #72d8e6;
   border: none;
-  border-radius: 10px;
+  border-radius: 1rem;
   padding: 0.8rem 1.2rem;
   cursor: pointer;
   font-size: $fontSize;
-  color: #383838;
+  color: #fff;
+  background: rgb(6, 112, 131);
+  background: linear-gradient(0deg, rgb(6, 85, 131) 0%, rgb(12, 174, 180) 100%);
+  border: none;
+
+  &:hover {
+    background: rgb(1, 176, 199);
+    background: linear-gradient(
+      0deg,
+      rgb(3, 156, 216) 0%,
+      rgb(1, 151, 197) 100%
+    );
+  }
 }

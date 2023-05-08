@@ -1,0 +1,24 @@
+.btn {
+    padding: 1em;
+    background-color: #f9f8fa;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev {
+  margin-right: 2rem;
+}
+
+.next {
+  margin-left: 2rem;
+}

@@ -2,14 +2,14 @@ import "./App.css";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Table from "./components/table/Table";
-import CardMap from "./components/cards/CardMap";
+import Game from "./components/Game/Game";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Table />
-      <CardMap />
+      <Game />
       <Footer />
     </div>
   );

@@ -5,9 +5,9 @@ import words from "../../utils/words.js";
 function CardMap() {
   return (
     <div>
-      {words.map((word) => (
+      {words.map((word, i) => (
         <Card
-          key={word.id}
+          key={i}
           english={word.english}
           transcription={word.transcription}
           russian={word.russian}
