@@ -3,6 +3,8 @@ import cn from 'classnames';
 import Card from "../card/Card";
 import words from "../../utils/words";
 import styles from './Game.module.scss';
+import leftArrow from '../../assets/images/left.png';
+import rightArrow from '../../assets/images/right.png';
 
 export default function Game(props) {
   const [cardIndex, setCardIndex] = useState(0);
@@ -29,9 +31,9 @@ export default function Game(props) {
 
   return (
     <div className={styles.game}>
-      <button onClick={handlePrev} className={buttonPrevClass}>{"<"}</button>
+      <button onClick={handlePrev} className={buttonPrevClass}><img src={leftArrow} className={styles.arrow} alt="prev" /></button>
       <Card {...word} />
-      <button onClick={ handleNext} className={buttonNextClass}>{">"}</button>
+      <button onClick={ handleNext} className={buttonNextClass}><img src={rightArrow} className={styles.arrow} alt="prev" /></button>
     </div>
   );
 }

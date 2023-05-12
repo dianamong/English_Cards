@@ -1,7 +1,8 @@
 @import '../../assets/styles/style.module.scss';
 
 .footer {
-  background-color: #c1f6fa;
+  background-color: $backgroundColor;
   color: $fontColor;
   font-size: $fontSize;
+  margin-top: auto;
 }

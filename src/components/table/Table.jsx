@@ -4,7 +4,7 @@ import styles from "./Table.module.scss";
 
 function Table() {
   return (
-    <div>
+    <div className={styles.table}>
       <div className={styles.table__header}>
         <span>Word</span>
         <span>Transcription</span>

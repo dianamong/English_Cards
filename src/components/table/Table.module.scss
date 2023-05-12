@@ -1,5 +1,12 @@
+@import '../../assets/styles/style.module.scss';
+
+.table {
+    width: 60vw;
+    margin: 10vh auto;
+}
+
 .table__header {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    font-size: 20px;
+    grid-template-columns: 1fr 1fr 1fr 0.3fr;
+    font-size: $fontSize;
 }

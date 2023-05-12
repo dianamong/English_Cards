@@ -1,7 +1,7 @@
 @import '../../assets/styles/style.module.scss';
 
 .header {
-  background-color: #c1f6fa;
+  background-color: $backgroundColor;
   color: $fontColor;
   font-size: $fontSize;
   display: flex;
@@ -11,9 +11,7 @@
 }
 
 .header__logo {
-  &:hover {
-    color: hotpink;
-  }
+  height: 10vh;
 }
 
 .menu {
@@ -24,14 +22,14 @@
 
 li {
   margin-right: 15px;
-}
 
-.menu__item {
-  text-decoration: none;
-  color: $fontColor;
+  a {
+    text-decoration: none;
+    color: $fontColor;
 
-  &:hover {
-    color: hotpink;
+    &:hover {
+      color: hotpink;
+      transition: all ease-in-out 0.3s;
+    }
   }
 }
-

@@ -2,6 +2,7 @@
     padding: 1em;
     background-color: #f9f8fa;
     border-radius: 0.5rem;
+    border: 1px solid #e4e2e6;
     cursor: pointer;
 
     &:hover {
@@ -13,6 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10vh;
 }
 
 .prev {
@@ -21,4 +23,8 @@
 
 .next {
   margin-left: 2rem;
+}
+
+.arrow {
+  height: 3vh;
 }

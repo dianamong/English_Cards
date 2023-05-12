@@ -2,10 +2,10 @@
 
 .row {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 0.3fr;
   background-color: #e6e7e7;
   padding: 0.5rem;
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
   align-items: center;
   font-size: $fontSize;
 }
@@ -22,7 +22,7 @@
   height: 40px;
   width: 40px;
   border: none;
-  // background-color: rgb(72, 145, 72);
+  margin-right: 0.5rem;
   &:hover {
     cursor: pointer;
     background-color: #cecece;
@@ -37,5 +37,6 @@
 .row__buttons {
   width: 20%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  justify-self: center;
 }

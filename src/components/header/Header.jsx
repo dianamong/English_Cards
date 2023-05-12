@@ -1,16 +1,18 @@
 import styles from "./Header.module.scss";
+import {Link} from 'react-router-dom';
+import logo from '../../assets/images/logo.png';
 
 function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.header__logo}>Let's learn English!</div>
+      <Link to='/words'><img src={logo} className={styles.header__logo} alt='logo'/></Link>
       <nav className={styles.header__menu}>
         <ul className={styles.menu}>
           <li>
-            <a href="#" className={styles.menu__item}>Words List</a>
+            <Link to='/words'>Words List</Link>
           </li>
           <li>
-            <a href="#" className={styles.menu__item}>Cards</a>
+            <Link to='game'>Game</Link>
           </li>
         </ul>
       </nav>
