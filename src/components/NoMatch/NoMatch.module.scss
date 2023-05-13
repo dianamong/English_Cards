@@ -9,7 +9,11 @@
   margin-top: 4.5rem;
 
   @media (max-width: 767px) {
-    background-size: 100%;
+    background-size: 80%;
+  }
+
+  @media (min-width: 1500px) {
+    background-size: 30%;
   }
 }
 
