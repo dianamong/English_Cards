@@ -1,0 +1,33 @@
+@import "../../assets/styles/style.module.scss";
+
+.error {
+  background-image: url(../../assets/images/404.gif);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 40%;
+  height: 75vh;
+  margin-top: 4.5rem;
+
+  @media (max-width: 767px) {
+    background-size: 100%;
+  }
+}
+
+h1 {
+  font-size: calc($fontSize + 1.5rem);
+}
+
+.btn {
+  border-radius: 1rem;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  font-size: $fontSize;
+  color: #fff;
+  background: rgb(6, 112, 131);
+  border: none;
+  margin-top: 3rem;
+
+  &:hover {
+    background-color: rgb(11, 156, 182);
+  }
+}

@@ -5,7 +5,7 @@ import logo from '../../assets/images/logo.png';
 function Header() {
   return (
     <header className={styles.header}>
-      <Link to='/words'><img src={logo} className={styles.header__logo} alt='logo'/></Link>
+      <Link to='/'><img src={logo} className={styles.header__logo} alt='logo'/></Link>
       <nav className={styles.header__menu}>
         <ul className={styles.menu}>
           <li>

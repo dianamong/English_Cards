@@ -1,4 +1,4 @@
-import Row from "../row/Row";
+import Row from "../Row/Row";
 import words from "../../utils/words.js";
 import styles from "./Table.module.scss";
 

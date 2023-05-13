@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import cn from 'classnames'; 
-import Card from "../card/Card";
+import Card from "../Card/Card";
 import words from "../../utils/words";
 import styles from './Game.module.scss';
 import leftArrow from '../../assets/images/left.png';
