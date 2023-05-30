@@ -1,25 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "./Card.module.scss";
 
 function Card(props) {
-  const [pressed, setPressed] = useState(false);
-
-  const handleChange = () => {
-    setPressed(!pressed);
-  };
-
+  const ref = useRef();
   useEffect(() => {
-    setPressed(false);
-  }, [props]);
+    ref.current.focus();
+  }, [])
 
   return (
     <div className={styles.card}>
       <div className={styles.card__english}>{props.english}</div>
       <div className={styles.card__transcription}>{props.transcription}</div>
-      {pressed ? (
+      {props.pressed ? (
         <div className={styles.card__russian}>{props.russian}</div>
       ) : (
-        <button className={styles.card__button} onClick={handleChange}>
+        <button className={styles.card__button} onClick={props.handleLearned} ref={ref}>
           <span>Показать перевод</span>
         </button>
       )}

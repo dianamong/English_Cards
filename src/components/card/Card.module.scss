@@ -21,6 +21,8 @@
 .card__transcription {
   padding-bottom: 2rem;
   color: #a8a8a8;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .card__russian {
@@ -37,7 +39,8 @@
   background: rgb(6, 112, 131);
   background: linear-gradient(0deg, rgb(6, 85, 131) 0%, rgb(12, 174, 180) 100%);
   border: none;
-
+  font-family: 'Ysabeau', sans-serif;
+  font-weight: 600;
   &:hover {
     background: rgb(1, 176, 199);
     background: linear-gradient(

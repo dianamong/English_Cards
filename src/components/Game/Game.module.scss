@@ -1,3 +1,5 @@
+@import "../../assets/styles/style.module.scss";
+
 .btn {
     padding: 1em;
     background-color: #f9f8fa;
@@ -27,4 +29,13 @@
 
 .arrow {
   height: 3vh;
+}
+
+.disabled {
+  background-color: #dadada;
+  pointer-events: none;
+}
+
+.counter {
+  font-size: calc($fontSize - 0.8vmin);
 }
