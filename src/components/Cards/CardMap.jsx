@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../Card/Card";
-import words from "../utils/words.js";
+import words from "../../utils/words.js";
 
 function CardMap() {
   return (

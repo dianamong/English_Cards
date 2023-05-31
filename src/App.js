@@ -1,7 +1,7 @@
 import "./App.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Table from "./components/Table";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Table from "./components/Table/Table";
 import Game from "./components/Game/Game";
 import NoMatch from "./components/NoMatch/NoMatch";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -12,12 +12,12 @@ function App() {
       <div className="App">
         <Header />
         <div className="container">
-        <Routes>
-          <Route exact path="/" element={<Table />}></Route>
-          <Route exact path="/words" element={<Table />}></Route>
-          <Route exact path="/game" element={<Game />}></Route>
-          <Route path="*" element={<NoMatch />} />
-        </Routes>
+          <Routes>
+            <Route exact path="/" element={<Table />}></Route>
+            <Route exact path="/words" element={<Table />}></Route>
+            <Route exact path="/game" element={<Game />}></Route>
+            <Route path="*" element={<NoMatch />} />
+          </Routes>
         </div>
         <Footer />
       </div>
@@ -25,4 +25,4 @@ function App() {
   );
 }
 
-export default App;.1\
+export default App;
