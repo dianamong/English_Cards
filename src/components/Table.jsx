@@ -1,5 +1,5 @@
-import Row from "../Row/Row";
-import words from "../../utils/words.js";
+import Row from "./Row";
+import words from "../utils/words.js";
 import styles from "./Table.module.scss";
 
 function Table() {

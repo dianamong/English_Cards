@@ -1,7 +1,7 @@
 import "./App.css";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import Table from "./components/Table/Table";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Table from "./components/Table";
 import Game from "./components/Game/Game";
 import NoMatch from "./components/NoMatch/NoMatch";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -25,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;.1\
