@@ -9,6 +9,8 @@ function Table() {
         <span>Word</span>
         <span>Transcription</span>
         <span>Translate</span>
+        <span>Tags</span>
+        <span>Edit</span>
       </div>
       {words.map((word) => (
         <Row

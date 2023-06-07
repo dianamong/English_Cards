@@ -24,35 +24,19 @@ export default function Game(props) {
   };
 
   const handlePrev = () => {
-    if (cardIndex - 1 < 0) {
-      setCardIndex(words.length - 1);
-      setIsLastCard(false);
-    } else {
-      setCardIndex(cardIndex - 1);
-      setIsLastCard(false);
-    }
+    const newIndex = cardIndex - 1 < 0 ? words.length - 1 : cardIndex - 1;
+    setCardIndex(newIndex);
+    setIsLastCard(false);
     setPressed(false);
-    if (cardIndex - 1 === 0) {
-      setIsFirstCard(true);
-    } else {
-      setIsFirstCard(false);
-    }
+    setIsFirstCard(newIndex === 0);
   };
 
   const handleNext = () => {
-    if (cardIndex + 1 >= words.length) {
-      setCardIndex(0);
-      setIsFirstCard(false);
-    } else {
-      setCardIndex(cardIndex + 1);
-      setIsFirstCard(false);
-    }
+    const newIndex = cardIndex + 1 >= words.length ? 0 : cardIndex + 1;
+    setCardIndex(newIndex);
+    setIsFirstCard(false);
     setPressed(false);
-    if (cardIndex + 1 === words.length - 1) {
-      setIsLastCard(true);
-    } else {
-      setIsLastCard(false);
-    }
+    setIsLastCard(newIndex === words.length - 1);
   };
 
   const buttonPrevClass = cn([

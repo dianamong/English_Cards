@@ -2,7 +2,7 @@
 
 .row {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 0.3fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 0.3fr;
   background-color: #e6e7e7;
   padding: 0.5rem;
   margin-top: 0.8rem;
@@ -11,11 +11,14 @@
 }
 .row__input {
   height: 20px;
-  width: 18vw;
+  width: 10vw;
   justify-self: center;
   border-radius: 10px;
   border-color: #e6e7e7;
+}
 
+.inputError {
+  border: 2px solid rgb(223, 1, 1);
 }
 
 .btn {
@@ -39,4 +42,9 @@
   display: flex;
   justify-content: space-around;
   justify-self: center;
+}
+
+.disabled {
+  pointer-events: none;
+  background-color: #cecece;
 }

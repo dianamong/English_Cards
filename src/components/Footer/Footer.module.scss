@@ -1,6 +1,10 @@
 @import '../../assets/styles/style.module.scss';
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
   background-color: $backgroundColor;
   color: $fontColor;
   font-size: $fontSize;
